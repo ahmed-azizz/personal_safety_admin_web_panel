@@ -1,5 +1,7 @@
 import 'dart:developer';
 
+import 'package:admin_web_panel/ImagePickerWidget.dart';
+import 'package:admin_web_panel/users_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_sidebar/simple_sidebar.dart';
@@ -7,6 +9,8 @@ import 'package:simple_sidebar/simple_sidebar_item.dart';
 import 'package:simple_sidebar/simple_sidebar_theme.dart';
 
 import 'add_news.dart';
+import 'map_screen.dart';
+
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -53,15 +57,23 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   final List<SimpleSidebarItem> sidebarItems = [
     SimpleSidebarItem(
+
       title: "Map",
       iconFront: Icons.map,
-      child: Container(),
+      child: map_screen(),
     ),
     SimpleSidebarItem(
+
       title: "Add",
       iconFront: Icons.add_circle_outline_sharp,
       child: NewsAddScreen(),
     ),
+    SimpleSidebarItem(
+      title: "Users",
+      iconFront: Icons.account_circle_outlined,
+      child: users_screen(),
+    ),
+
   ];
   final String title;
 

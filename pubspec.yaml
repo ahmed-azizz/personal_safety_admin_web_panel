@@ -28,12 +28,18 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  firebase_core: ^2.10.0
-  firebase_core_web: ^2.3.0
-  cloud_firestore: ^4.5.2
-  firebase_core_platform_interface: ^4.6.0
+  firebase_core: ^2.12.0
+  firebase_core_web: ^2.5.0
+  firebase_auth: ^4.4.0
+  cloud_firestore: ^4.7.0
+  uuid: ^3.0.7
+  sizer: ^2.0.15
+  firebase_core_platform_interface: ^4.8.0
   simple_sidebar: ^0.0.7
+#  image_picker_web: ^1.0.0
+  file_picker: ^4.1.0
   font_awesome_flutter: ^10.4.0
+
   flutter:
     sdk: flutter
 
@@ -41,6 +47,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_map: ^4.0.0
+  firebase_storage: ^11.1.2
+  image_picker: ^0.8.7+4
 
 dev_dependencies:
   flutter_test:
